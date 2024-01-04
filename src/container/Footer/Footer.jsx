@@ -1,14 +1,14 @@
 import React from "react";
-import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
-
+import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { FooterOverlay, Newsletter } from "../../components";
 import { images } from "../../constants";
 import "./Footer.css";
 
 const Footer = () => {
-    const facebookURL = "https://www.facebook.com/example";
-    const twitterURL = "https://www.twitter.com/example";
-    const instagramURL = "https://www.instagram.com/example";
+    const facebookURL =
+      "https://www.facebook.com/profile.php?id=61555222799199&mibextid=ZbWKwL";
+    const instagramURL =
+      "https://www.instagram.com/kabobloungeca?igsh=d2Uyd2luN3F0dnp1";
       const openApp = (url) => {
         window.location.href = url;
       };
@@ -16,7 +16,6 @@ const Footer = () => {
     <div className="app__footer section__padding" id="login">
       <FooterOverlay />
       <Newsletter />
-
       <div className="app__footer-links">
         <div className="app__footer-links_contact">
           <h1 className="app__footer-headtext">Contact Us</h1>
@@ -25,9 +24,7 @@ const Footer = () => {
           </p>
           <p className="p__opensans">905-333-1113</p>
         </div>
-
         <div className="app__footer-links_logo">
-          {/* <img src={images.gericht} alt="footer_logo" /> */}
           <h1 className="KL">KABOB LOUNGE</h1>
           <p className="p__opensans">
             &quot;The best way to find yourself is to lose yourself in the
@@ -39,15 +36,10 @@ const Footer = () => {
             style={{ marginTop: 15 }}
           />
           <div className="app__footer-links_icons">
-            {/* Facebook Icon */}
             <FiFacebook onClick={() => openApp(facebookURL)} />
-            {/* Twitter Icon */}
-            <FiTwitter onClick={() => openApp(twitterURL)} />
-            {/* Instagram Icon */}
             <FiInstagram onClick={() => openApp(instagramURL)} />
           </div>
         </div>
-
         <div className="app__footer-links_work">
           <h1 className="app__footer-headtext">Working Hours</h1>
           <p className="p__opensans">Monday-Friday:</p>
@@ -56,9 +48,11 @@ const Footer = () => {
           <p className="p__opensans">07:00 am - 11:00 pm</p>
         </div>
       </div>
-
       <div className="footer__copyright">
-        <p className="p__opensans">2023 Kabob Lounge. All Rights reserved.</p>
+        <p className="p__opensans">
+          {" "}
+          &copy; 2024 Kabob Lounge. All Rights reserved.
+        </p>
       </div>
     </div>
   );

@@ -19,14 +19,19 @@ const AboutUs = () => {
           <img src={images.spoon} alt="about_spoon" className="spoon__img" />
           <p className="p__opensans">
             Welcome to our home of authentic Afgan flavors, where we bring the
-            rich culinary traditions of Afghanistan to Canada.
+            rich culinary traditions of Afghanistan to Canada. Experience the
+            essence of Afghan hospitality through our meticulously curated
+            dishes, a true reflection of Afghanistan's culinary heritage.
             <br />
             <br />
             Our menu is a journey through Afghanistan's diverse region, offering
             the best tempting Afghan cuisine taste.
             <br />
             <br />
-            We are thrilled to bring you the mouth watering taste of Afghanistan
+            We are thrilled to bring you the mouth watering taste of
+            Afghanistan. Indulge in the tantalizing taste of Afghanistan,
+            crafted with passion and authenticity to offer you an unforgettable
+            culinary experience.
           </p>
           <Link to="/AboutUsMore">
             <button type="button" className="custom__button">
@@ -40,19 +45,23 @@ const AboutUs = () => {
         </div>
 
         <div className="app__aboutus-content_history">
-          <h1 className="headtext__cormorant">Our History</h1>
+          <h1 className="headtext__cormorant">History</h1>
           <img src={images.spoon} alt="about_spoon" className="spoon__img" />
           <p className="p__opensans">
-            We embarked on a flavorful odyssey to bring the vibrant culinary
-            heritage of Afghanistan to your table.
+            Afghan cuisine, a blend of ancient influences, showcases the mastery
+            of kabobs and tikka. These dishes originate from centuries-old
+            grilling traditions, symbolizing craftsmanship and cultural
+            diversity.
             <br />
             <br />
-            Our menu is an expedition through Afghanistan's diverse regions,
-            curated to offer the most enticing taste of Afghan cuisine.
+            Kabobs, born from nomadic practices, reflect meticulous preparation
+            and regional variations. Tikka, with its aromatic spices, embodies
+            the essence of Afghan culinary excellence.
             <br />
             <br />
-            Thrilled and honored, we take immense pride in presenting the
-            mouthwatering essence of Afghanistan's culinary treasures to you.
+            At Kabob Lounge, we're passionate about sharing the authentic taste
+            of Afghan cuisine. Experience our menu, crafted to honor
+            Afghanistan's rich culinary legacy.
           </p>
           <Link to="/AboutUsMore">
             <button type="button" className="custom__button">

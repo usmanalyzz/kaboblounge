@@ -18,7 +18,7 @@
 }
 
 .app__navbar-logo img {
-    width: 200px;
+    width: 260px;
     border-radius: 50%; /* Adds a circular border to the logo */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
 }

@@ -19,7 +19,6 @@ const MainHomeComponent = () => {
       <Header />
       <AboutUs />
       <SpecialMenu />
-      <Chef />
       <Intro />
       <Gallery />
       <FindUs />

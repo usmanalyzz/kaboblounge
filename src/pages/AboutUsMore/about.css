@@ -71,6 +71,7 @@
 .app__about-content_additional .additional__img {
   width: 380px; /* Set the width as desired */
   height: 520px; /* Maintain aspect ratio */
+  margin-left: 10rem;
 }
 
 

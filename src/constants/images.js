@@ -1,51 +1,71 @@
 import bg from "../assets/bg.png";
-import chef from "../assets/chef.png";
 import G from "../assets/G.png";
 import KL from "../assets/KL.png";
-import gallery01 from "../assets/gallery01.png";
-import gallery02 from "../assets/gallery02.png";
-import gallery03 from "../assets/gallery03.png";
-import gallery04 from "../assets/gallery04.png";
 import knife from "../assets/knife.png";
-import logo from "../assets/logo.png";
 import menu from "../assets/menu.png";
 import overlaybg from "../assets/overlaybg.png";
 import spoon from "../assets/spoon.svg";
-import welcome from "../assets/welcome.png";
-import findus from "../assets/findus.png";
-import laurels from "../assets/laurels.png";
-import award01 from "../assets/award01.png";
-import award02 from "../assets/award02.png";
-import award03 from "../assets/award03.png";
-import award05 from "../assets/award05.png";
-import sign from "../assets/signature.png";
-import quote from "../assets/quote.png";
-// import gericht from '../assets/gericht.png';
-import KLogo from "../assets/KLogo.png";
+import FinalLogo from "../assets/FinalLogo.png";
+import pcsChickenWingsOnly8 from "../assets/8pcsChickenWingsOnly.jpg";
+import pcsChickenWingsSaladNaan8 from "../assets/8pcsChickenWingsSaladNaan.jpg";
+import pcsChickenWingsOnly12 from "../assets/12pcsChickenWingsOnly.jpg";
+import pcsChickenWingsOnlySaladNaan12 from "../assets/12pcsChickenWingsOnlySaladNaan.jpg";
+import BeefFor2 from "../assets/BeefFor2.jpg";
+import BeefTikkaDinner from "../assets/BeefTikkaDinner.jpg";
+import BeefTikkaSaladNaan from "../assets/BeefTikkaSaladNaan.jpg";
+import BigPicture from "../assets/BigPicture.png";
+import ChapleeKabobDinner from "../assets/ChapleeKabobDinner.jpg";
+import ChapleeKabobSaladNaan from "../assets/ChapleeKabobSaladNaan.jpg";
+import ChickenChapleeKabobDinner from "../assets/ChickenChapleeKabobDinner.jpg";
+import ChickenChapleeKabobSaladNaan from "../assets/ChickenChapleeKabobSaladNaan.jpg";
+import ChickenFor2 from "../assets/ChickenFor2.jpg";
+import ChickenKoftaKabobDinner from "../assets/ChickenKoftaKabobDinner.jpg";
+import ChickenWhiteBreastKabobDinner from "../assets/ChickenWhiteBreastKabobDinner.jpg";
+import ChickenWhiteBreastKabobSaladNaan from "../assets/ChickenWhiteBreastKabobSaladNaan.jpg";
+import FamilyPlatter1 from "../assets/FamilyPlatter1.jpg";
+import FamilyPlatter2 from "../assets/FamilyPlatter2.jpg";
+import HalfChickenDinner from "../assets/HalfChickenDinner.jpg";
+import KoftaKabobSaladNaan from "../assets/KoftaKabobSaladNaan.jpg";
+import QabuleeRiceWithRasinCarrot from "../assets/QabuleeRiceWithRasinCarrot.jpg";
+import SultaniKabobSaladNaan from "../assets/SultaniKabobSaladNaan.jpg";
+import TandooriBreastKabobDinner from "../assets/TandooriBreastKabobDinner.jpg";
+import TandooriBreastKabobSaladNaan from "../assets/TandooriBreastKabobSaladNaan.jpg";
+import WazeriKabobDinner from "../assets/WazeriKabobDinner.jpg";
+import WazeriKabobSaladNaan from "../assets/WazeriKabobSaladNaan.jpg";
 
 export default {
   bg,
-  chef,
   G,
   KL,
-  gallery01,
-  gallery02,
-  gallery03,
-  gallery04,
   knife,
-  logo,
   menu,
   overlaybg,
   spoon,
-  welcome,
-  findus,
-  laurels,
-  award01,
-  award02,
-  award03,
-  award05,
-  sign,
-  quote,
-  // gericht,
-  KLogo,
+  FinalLogo,
+  pcsChickenWingsOnly8,
+  pcsChickenWingsSaladNaan8,
+  pcsChickenWingsOnly12,
+  pcsChickenWingsOnlySaladNaan12,
+  BeefFor2,
+  BeefTikkaDinner,
+  BeefTikkaSaladNaan,
+  BigPicture,
+  ChapleeKabobDinner,
+  ChapleeKabobSaladNaan,
+  ChickenChapleeKabobDinner,
+  ChickenChapleeKabobSaladNaan,
+  ChickenFor2,
+  ChickenKoftaKabobDinner,
+  ChickenWhiteBreastKabobDinner,
+  ChickenWhiteBreastKabobSaladNaan,
+  FamilyPlatter1,
+  FamilyPlatter2,
+  HalfChickenDinner,
+  KoftaKabobSaladNaan,
+  QabuleeRiceWithRasinCarrot,
+  SultaniKabobSaladNaan,
+  TandooriBreastKabobDinner,
+  TandooriBreastKabobSaladNaan,
+  WazeriKabobDinner,
+  WazeriKabobSaladNaan,
 };

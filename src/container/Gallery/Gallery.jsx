@@ -56,10 +56,10 @@ const Gallery = () => {
           onClick={openInstagram}
         >
           {[
-            images.gallery01,
-            images.gallery02,
-            images.gallery03,
-            images.gallery04,
+            images.HalfChickenDinner,
+            images.BeefTikkaDinner,
+            images.SultaniKabobSaladNaan,
+            images.pcsChickenWingsOnly8,
           ].map((image, index) => (
             <div
               className="app__gallery-images_card flex__center"

@@ -1,37 +1,53 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 import { SubHeading } from "../../components";
-import { images } from "../../constants";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
-import "./findus.css"
+import "./findus.css";
 
 const FindUs = () => {
-  const facebookURL = "https://www.facebook.com/example";
-  const twitterURL = "https://www.twitter.com/example";
-  const instagramURL = "https://www.instagram.com/example";
-  const openApp = (url) => {
-    window.location.href = url;
+  const facebookURL =
+    "https://www.facebook.com/profile.php?id=61555222799199&mibextid=ZbWKwL";
+  const instagramURL =
+    "https://www.instagram.com/kabobloungeca?igsh=d2Uyd2luN3F0dnp1";
+  const destinationAddress = "1400 Plains Road East, Burlington, ON, L7R 2P8";
+
+  const openMap = () => {
+    window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(destinationAddress)}`, '_blank');
   };
+
+  useEffect(() => {
+    const map = L.map("map").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "",
+    }).addTo(map);
+
+    const destination = [43.3871, -79.8371]; // Destination coordinates
+
+    // Add a marker for the destination location
+    L.marker(destination).addTo(map).bindPopup(destinationAddress).openPopup();
+
+    map.on('click', openMap); // Open Google Maps on map click
+  }, []);
+
   return (
     <div className="app__bg app__wrapper section__padding" id="contact">
       <div className="app__wrapper_info">
         <SubHeading title="Contact" />
         <h1 className="headtext__cormorant" style={{ marginBottom: "3rem" }}>
-          Contact Us
+          Find Us
         </h1>
         <div className="app__wrapper-content">
           <p className="p__opensans">
-            1400 Plains road East, Burlington , ON, L7R 2P8
+            1400 Plains road East, Burlington, ON, L7R 2P8
           </p>
           <p className="p__opensans">905-333-1113</p>
           <br />
           <div className="app__footer-links_icons">
-            {/* Facebook Icon */}
-            <FiFacebook onClick={() => openApp(facebookURL)} />
-            {/* Twitter Icon */}
-            <FiTwitter onClick={() => openApp(twitterURL)} />
-            {/* Instagram Icon */}
-            <FiInstagram onClick={() => openApp(instagramURL)} />
+            {/* Your social media icons */}
+            <FiFacebook onClick={() => window.location.href = facebookURL} />
+            <FiInstagram onClick={() => window.location.href = instagramURL} />
           </div>
           <p
             className="p__cormorant"
@@ -45,7 +61,8 @@ const FindUs = () => {
       </div>
 
       <div className="app__wrapper_img">
-        <img src={images.findus} alt="finus_img" />
+        {/* Leaflet map */}
+        <div id="map" style={{ width: "100%", height: "400px", cursor: "pointer" }}></div>
       </div>
     </div>
   );

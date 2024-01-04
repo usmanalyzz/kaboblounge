@@ -115,32 +115,157 @@ const Menu = () => {
             <br />
             <div className="app__menu-items">
               <p className="headtext__cormorant">Beef</p>
-              {data.kabobizer.map((kabobizers, index) => (
+              {data.kabobizerbeef.map((kabobizerbeefs, index) => (
                 <MenuItem
-                  key={kabobizers.title + index}
-                  title={kabobizers.title}
-                  price={kabobizers.price}
-                  tags={kabobizers.tags}
+                  key={kabobizerbeefs.title + index}
+                  title={kabobizerbeefs.title}
+                  price={kabobizerbeefs.price}
+                  tags={kabobizerbeefs.tags}
                 />
               ))}
             </div>
 
             <div className="app__menu-items">
               <p className="headtext__cormorant">Chicken</p>
-              {data.kabobizer.map((kabobizers, index) => (
+              {data.kabobizerchicken.map((kabobizerchickens, index) => (
                 <MenuItem
-                  key={kabobizers.title + index}
-                  title={kabobizers.title}
-                  price={kabobizers.price}
-                  tags={kabobizers.tags}
+                  key={kabobizerchickens.title + index}
+                  title={kabobizerchickens.title}
+                  price={kabobizerchickens.price}
+                  tags={kabobizerchickens.tags}
                 />
               ))}
             </div>
           </div>
         </div>
+        {/* Add more categories if needed */}
+      </div>
+
+      <div className="app__menu-categories">
+        <div className="app__menu-category">
+          <p className="app__menu-category-heading">TANDOORI CHICKEN WINGS</p>
+          <div className="kabobizer">
+            <br />
+            <div className="app__menu-items">
+              {data.wings.map((wing, index) => (
+                <MenuItem
+                  key={wing.title + index}
+                  title={wing.title}
+                  price={wing.price}
+                  tags={wing.tags}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        {/* Add more categories if needed */}
+      </div>
+      <div className="app__menu-categories">
+        <div className="app__menu-category">
+          <p className="app__menu-category-heading">CHICKEN QORMA</p>
+          <div className="app__menu-items">
+            {data.qorma.map((qourma, index) => (
+              <MenuItem
+                key={qourma.title + index}
+                title={qourma.title}
+                price={qourma.price}
+                tags={qourma.tags}
+              />
+            ))}
+          </div>
+        </div>
 
         {/* Add more categories if needed */}
       </div>
+
+      <div className="app__menu-categories">
+        <div className="app__menu-category">
+          <p className="app__menu-category-heading">WRAPS</p>
+          <div className="app__menu-items">
+            {data.wraps.map((wrap, index) => (
+              <MenuItem
+                key={wrap.title + index}
+                title={wrap.title}
+                price={wrap.price}
+                tags={wrap.tags}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Add more categories if needed */}
+      </div>
+      <div className="app__menu-categories">
+        <div className="app__menu-category">
+          <p className="app__menu-category-heading">SIDE ORDERS</p>
+          <div className="app__menu-items">
+            {data.sideorders.map((sideorder, index) => (
+              <MenuItem
+                key={sideorder.title + index}
+                title={sideorder.title}
+                price={sideorder.price}
+                tags={sideorder.tags}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Add more categories if needed */}
+      </div>
+      <div className="app__menu-categories">
+        <div className="app__menu-category">
+          <p className="app__menu-category-heading">SALADS</p>
+          <div className="app__menu-items">
+            {data.salads.map((salad, index) => (
+              <MenuItem
+                key={salad.title + index}
+                title={salad.title}
+                price={salad.price}
+                tags={salad.tags}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Add more categories if needed */}
+      </div>
+
+      <div className="app__menu-categories">
+        <div className="app__menu-category">
+          <p className="app__menu-category-heading">SAUCES</p>
+          <div className="app__menu-items">
+            {data.sauces.map((sauce, index) => (
+              <MenuItem
+                key={sauce.title + index}
+                title={sauce.title}
+                price={sauce.price}
+                tags={sauce.tags}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Add more categories if needed */}
+      </div>
+
+      <div className="app__menu-categories">
+        <div className="app__menu-category">
+          <p className="app__menu-category-heading">DRINKS</p>
+          <div className="app__menu-items">
+            {data.drinks.map((drink, index) => (
+              <MenuItem
+                key={drink.title + index}
+                title={drink.title}
+                price={drink.price}
+                tags={drink.tags}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Add more categories if needed */}
+      </div>
+
       <Footer />
     </div>
   );
