@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import {
   BsInstagram,
   BsArrowLeftShort,
@@ -10,24 +10,65 @@ import { images } from "../../constants";
 import "./Gallery.css";
 
 const Gallery = () => {
-  const scrollRef = React.useRef(null);
+    const scrollRef = useRef(null);
+    const SCROLL_SPEED = 3;
+    const SCROLL_INTERVAL = 50;
 
-  const scroll = (direction) => {
-    const { current } = scrollRef;
+    let isScrollingLeft = true;
 
-    if (direction === "left") {
-      current.scrollLeft -= 300;
-    } else {
-      current.scrollLeft += 300;
-    }
-  };
+    const scroll = (direction) => {
+      const { current } = scrollRef;
 
+      if (direction === "left") {
+        current.scrollLeft -= SCROLL_SPEED;
+      } else {
+        current.scrollLeft += SCROLL_SPEED;
+      }
+    };
   const openInstagram = () => {
     window.open(
       "https://www.instagram.com/kabobloungeca?igsh=d2Uyd2luN3F0dnp1",
       "_blank"
     );
   };
+
+  const handleArrowClick = (direction) => {
+    const { current } = scrollRef;
+    if (direction === "left") {
+      isScrollingLeft = true;
+    } else {
+      isScrollingLeft = false;
+    }
+    scroll(direction);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { current } = scrollRef;
+
+      if (current) {
+        if (isScrollingLeft && current.scrollLeft === 0) {
+          isScrollingLeft = false;
+        } else if (
+          !isScrollingLeft &&
+          current.scrollLeft + current.offsetWidth >= current.scrollWidth
+        ) {
+          isScrollingLeft = true;
+        }
+      }
+    };
+
+    const interval = setInterval(() => {
+      if (isScrollingLeft) {
+        scroll("left");
+      } else {
+        scroll("right");
+      }
+      handleScroll();
+    }, SCROLL_INTERVAL);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="app__gallery flex__center">
@@ -63,10 +104,31 @@ const Gallery = () => {
           onClick={openInstagram}
         >
           {[
-            images.HalfChickenDinner,
-            images.BeefTikkaDinner,
-            images.SultaniKabobSaladNaan,
+            images.pcsChickenWingsSaladNaan8,
             images.pcsChickenWingsOnly8,
+            images.pcsChickenWingsOnly12,
+            images.pcsChickenWingsOnlySaladNaan12,
+            images.BeefFor2,
+            images.BeefTikkaDinner,
+            images.BeefTikkaSaladNaan,
+            images.ChapleeKabobDinner,
+            images.ChapleeKabobSaladNaan,
+            images.ChickenChapleeKabobDinner,
+            images.ChickenChapleeKabobSaladNaan,
+            images.ChickenFor2,
+            images.ChickenKoftaKabobDinner,
+            images.ChickenWhiteBreastKabobDinner,
+            images.ChickenWhiteBreastKabobSaladNaan,
+            images.FamilyPlatter1,
+            images.FamilyPlatter2,
+            images.HalfChickenDinner,
+            images.KoftaKabobSaladNaan,
+            images.QabuleeRiceWithRasinCarrot,
+            images.SultaniKabobSaladNaan,
+            images.TandooriBreastKabobDinner,
+            images.TandooriBreastKabobSaladNaan,
+            images.WazeriKabobDinner,
+            images.WazeriKabobSaladNaan,
           ].map((image, index) => (
             <div
               className="app__gallery-images_card flex__center"
@@ -78,14 +140,18 @@ const Gallery = () => {
           ))}
         </div>
         <div className="app__gallery-images_arrows">
-          <BsArrowLeftShort
+          <div
             className="gallery__arrow-icon"
-            onClick={() => scroll("left")}
-          />
-          <BsArrowRightShort
+            onClick={() => handleArrowClick("left")}
+          >
+            <BsArrowLeftShort />
+          </div>
+          <div
             className="gallery__arrow-icon"
-            onClick={() => scroll("right")}
-          />
+            onClick={() => handleArrowClick("right")}
+          >
+            <BsArrowRightShort />
+          </div>
         </div>
       </div>
     </div>

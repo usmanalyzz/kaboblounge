@@ -13,13 +13,17 @@ const Navbar = () => {
   };
   const navigate = useNavigate();
   const routeChangemobile = (route) => {
-      navigate(route);
-      setToggleMenu(false); // Close the menu after the link is clicked
+    navigate(route);
+    setToggleMenu(false); // Close the menu after the link is clicked
   };
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <img src={images.FinalLogo} alt="app__logo" />
+      </div>
+      <div className="app__navbar-halal-image">
+        <img src={images.halalLogo} alt="Halal" />
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">

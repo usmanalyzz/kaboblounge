@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background: #000000;
+      position: relative; 
     /* position: absolute; */
     z-index: 500;
 }
@@ -111,10 +112,25 @@
     font-family: var(--font-base);
 }
 
-.app__navbar-smallscreen_links li:hover {
-    color: var(--color-white);
+.app__navbar-halal-image {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
 }
 
+.app__navbar-halal-image img {
+  width: 81px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* Adjust positioning for smaller screens */
+@media screen and (max-width: 768px) {
+  .app__navbar-halal-image {
+    top: 25px; /* Adjust top position for smaller screens */
+    right: 100px; /* Adjust right position for smaller screens */
+    width: 50px;
+  }
+}
 @media screen and (min-width: 2000px) {
     .app__navbar-logo img {
         width: 210px;
@@ -141,6 +157,6 @@
     }
 
     .app__navbar-logo img {
-        width: 110px;
+        width: 220px;
     }
 }
