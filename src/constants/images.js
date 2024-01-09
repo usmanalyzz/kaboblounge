@@ -5,10 +5,12 @@ import bg3 from "../assets/bg3.jpg";
 import bg4 from "../assets/bg4.jpg";
 import halalLogo from "../assets/halalLogo.jpg";
 
+
 import G from "../assets/G.png";
 import KL from "../assets/KL.png";
 import knife from "../assets/knife.png";
-import seekh1 from "../assets/seekh1.png";
+import seekh1 from "../assets/seekh.png";
+import seekh2 from "../assets/Seekh.jpeg";
 import Kb from "../assets/Kb.JPG";
 
 import doordash from "../assets/doordash.jpg";
@@ -61,6 +63,7 @@ export default {
   knife,
   halalLogo,
   seekh1,
+  seekh2,
   menu,
   overlaybg,
   spoon,

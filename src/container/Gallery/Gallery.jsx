@@ -11,7 +11,7 @@ import "./Gallery.css";
 
 const Gallery = () => {
     const scrollRef = useRef(null);
-    const SCROLL_SPEED = 3;
+    const SCROLL_SPEED = 30;
     const SCROLL_INTERVAL = 50;
 
     let isScrollingLeft = true;

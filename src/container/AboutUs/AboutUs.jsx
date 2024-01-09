@@ -34,6 +34,7 @@ const AboutUs = () => {
             crafted with passion and authenticity to offer you an unforgettable
             culinary experience.
             <br />
+            <br />
           </p>
           <Link to="/AboutUsMore">
             <button type="button" className="custom__button">
@@ -43,7 +44,7 @@ const AboutUs = () => {
         </div>
 
         <div className="app__aboutus-content_knife flex__center">
-          <img src={images.knife} alt="about_knife" />
+          <img src={images.seekh1} alt="about_knife" />
         </div>
 
         <div className="app__aboutus-content_history">
