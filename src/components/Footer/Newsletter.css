@@ -29,7 +29,21 @@
 .app__newsletter-input button {
     width: max-content;
 }
-
+.custom__button__news {
+  background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
 @media screen and (min-width: 2000px) {
     .app__newsletter-input input {
         font-size: 2rem;

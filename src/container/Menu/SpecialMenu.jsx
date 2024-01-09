@@ -28,7 +28,7 @@ const SpecialMenu = () => {
               <MenuItem
                 key={kabob_tikkah.title + index}
                 title={kabob_tikkah.title}
-                price={kabob_tikkah.price}
+                // price={kabob_tikkah.price}
                 tags={kabob_tikkah.tags}
               />
             ))}
@@ -46,7 +46,7 @@ const SpecialMenu = () => {
               <MenuItem
                 key={platter.title + index}
                 title={platter.title}
-                price={platter.price}
+                // price={platter.price}
                 tags={platter.tags}
               />
             ))}
@@ -56,7 +56,7 @@ const SpecialMenu = () => {
 
       <div style={{ marginTop: 15 }}>
         <Link to="/MenuMore">
-          <button type="button" className="custom__button">
+          <button type="button" className="custom__button__menu">
             View More
           </button>
         </Link>

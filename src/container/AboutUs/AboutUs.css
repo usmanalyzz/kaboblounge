@@ -5,11 +5,12 @@
 .app__aboutus-overlay {
     position: absolute;
     inset: 0;
+    
 }
 
 .app__aboutus-overlay img {
-    width: 550px;
-    height: 792px;
+    width: 62rem;
+    height: 60rem;
     z-index: 0;
 }
 
@@ -46,10 +47,18 @@
     text-align: left;
 }
 
-.app__aboutus-content_about p,
+.app__aboutus-content_about p{
+    margin: 2rem 0;
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 1rem;
+}
+
 .app__aboutus-content_history p {
     margin: 2rem 0;
-    color: var(--color-grey);
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 1rem;
 }
 .p__opensans{
     text-align: center;

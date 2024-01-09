@@ -33,8 +33,11 @@ const FindUs = () => {
 
   return (
     <div className="app__bg app__wrapper section__padding" id="contact">
-      <div className="app__wrapper_info">
-        <SubHeading title="Contact" />
+      <div
+        className="app__wrapper_info"
+        style={{ marginBottom: "3rem", backgroundColor: "transparent" }}
+      >
+        {/* <SubHeading title="Contact" /> */}
         <h1 className="headtext__cormorant" style={{ marginBottom: "3rem" }}>
           Find Us
         </h1>
@@ -46,12 +49,14 @@ const FindUs = () => {
           <br />
           <div className="app__footer-links_icons">
             {/* Your social media icons */}
-            <FiFacebook onClick={() => window.location.href = facebookURL} />
-            <FiInstagram onClick={() => window.location.href = instagramURL} />
+            <FiFacebook onClick={() => (window.location.href = facebookURL)} />
+            <FiInstagram
+              onClick={() => (window.location.href = instagramURL)}
+            />
           </div>
           <p
             className="p__cormorant"
-            style={{ color: "#DCCA87", margin: "2rem 0" }}
+            style={{ color: "#F1DD38", margin: "2rem 0" }}
           >
             Opening Hours
           </p>
@@ -62,7 +67,10 @@ const FindUs = () => {
 
       <div className="app__wrapper_img">
         {/* Leaflet map */}
-        <div id="map" style={{ width: "100%", height: "400px", cursor: "pointer" }}></div>
+        <div
+          id="map"
+          style={{ width: "100%", height: "400px", cursor: "pointer" }}
+        ></div>
       </div>
     </div>
   );

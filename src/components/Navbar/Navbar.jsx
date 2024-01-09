@@ -32,10 +32,10 @@ const Navbar = () => {
           <a onClick={() => routeChange("/MenuMore")}>Menu</a>
         </li>
         <li className="p__opensans">
-          <a href="#contact">Location</a>
+          <a onClick={() => routeChange("/Location")}>Location</a>
         </li>
         <li className="p__opensans">
-          <a href="#contact">Contact</a>
+          <a onClick={() => routeChange("/ContactUs")}>Contact Us</a>
         </li>
       </ul>
       <div className="app__navbar-smallscreen">
@@ -50,33 +50,23 @@ const Navbar = () => {
               fontSize={27}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
+              kkm
             />
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a onClick={() => routeChangemobile("/Home")}>
-                  Home
-                </a>
+                <a onClick={() => routeChangemobile("/Home")}>Home</a>
               </li>
               <li>
-                <a onClick={() => routeChangemobile("/AboutUsMore")}
-                >
-                  About
-                </a>
+                <a onClick={() => routeChangemobile("/AboutUsMore")}>About</a>
               </li>
               <li>
-                <a onClick={() => routeChangemobile("/MenuMore")}>
-                  Menu
-                </a>
+                <a onClick={() => routeChangemobile("/MenuMore")}>Menu</a>
               </li>
               <li>
-                <a href="#contact" onClick={() => setToggleMenu(false)}>
-                  Location
-                </a>
+                <a onClick={() => routeChangemobile("/Location")}>Location</a>
               </li>
               <li>
-                <a href="#contact" onClick={() => setToggleMenu(false)}>
-                  Contact
-                </a>
+                <a onClick={() => routeChange("/ContactUs")}>Contact Us</a>
               </li>
             </ul>
           </div>

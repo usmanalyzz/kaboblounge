@@ -10,7 +10,7 @@ const AboutUs = () => {
       id="about"
     >
       <div className="app__aboutus-overlay flex__center">
-        <img src={images.KL} alt="G_overlay" />
+        {/* <img src={images.seekh1} alt="G_overlay" /> */}
       </div>
 
       <div className="app__aboutus-content flex__center">
@@ -18,6 +18,7 @@ const AboutUs = () => {
           <h1 className="headtext__cormorant">About Us</h1>
           <img src={images.spoon} alt="about_spoon" className="spoon__img" />
           <p className="p__opensans">
+            <br />
             Welcome to our home of authentic Afgan flavors, where we bring the
             rich culinary traditions of Afghanistan to Canada. Experience the
             essence of Afghan hospitality through our meticulously curated
@@ -32,6 +33,7 @@ const AboutUs = () => {
             Afghanistan. Indulge in the tantalizing taste of Afghanistan,
             crafted with passion and authenticity to offer you an unforgettable
             culinary experience.
+            <br />
           </p>
           <Link to="/AboutUsMore">
             <button type="button" className="custom__button">
@@ -48,6 +50,7 @@ const AboutUs = () => {
           <h1 className="headtext__cormorant">History</h1>
           <img src={images.spoon} alt="about_spoon" className="spoon__img" />
           <p className="p__opensans">
+            <br />
             Afghan cuisine, a blend of ancient influences, showcases the mastery
             of kabobs and tikka. These dishes originate from centuries-old
             grilling traditions, symbolizing craftsmanship and cultural
@@ -62,6 +65,8 @@ const AboutUs = () => {
             At Kabob Lounge, we're passionate about sharing the authentic taste
             of Afghan cuisine. Experience our menu, crafted to honor
             Afghanistan's rich culinary legacy.
+            <br />
+            <br />
           </p>
           <Link to="/AboutUsMore">
             <button type="button" className="custom__button">

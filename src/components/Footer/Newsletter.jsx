@@ -33,7 +33,7 @@ const Newsletter = () => {
         />
         <button
           type="button"
-          className="custom__button"
+          className="custom__button__news"
           onClick={handleSubscribe}
         >
           Subscribe

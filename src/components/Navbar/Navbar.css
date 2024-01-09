@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-black);
-
-    padding: 1rem 2rem;
+    background: #000000;
+    /* position: absolute; */
+    z-index: 500;
 }
 
 .app__navbar-logo {
@@ -13,14 +13,15 @@
     justify-content: flex-start;
     align-items: center;
     width: 200px;
-    height: 150px;
+    height: 100px;
     text-align: center;
 }
 
 .app__navbar-logo img {
-    width: 260px;
-    border-radius: 50%; /* Adds a circular border to the logo */
+    width: 280px;
+    border-radius: 10%; /* Adds a circular border to the logo */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+    margin-left: 1rem;
 }
 
 .app__navbar-links {
@@ -32,13 +33,20 @@
     list-style: none;
 }
 
+/* Apply margin-right to create spaces between the list items */
+.app__navbar-links li:not(:last-child) {
+    margin-right: 40px; /* Adjust as needed for spacing between buttons */
+}
 .app__navbar-links li {
+    display: inline;
     margin: 0 1rem;
     cursor: pointer;
+    margin-right: 20px; /* Adjust as needed for spacing */
 }
 
-.app__navbar-links li:hover {
-    color: var(--color-grey);
+.app__navbar-links li a:hover {
+    color: #545257; /* Change to your hover color */
+    font-size: 18px; /* Enlarge the font size on hover */
 }
 
 .app__navbar-login {

@@ -28,7 +28,7 @@
 }
 
 .app__about-overlay img {
-  width: 100%;
+  width: 200px;
   height: auto;
   display: block;
 }
@@ -40,6 +40,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   max-width: 1200px; /* Adjust the max-width according to your design */
+  margin-bottom: 1.5rem;
 }
 
 .app__about-content_about {
@@ -47,6 +48,8 @@
   padding: 0 20px; /* Add padding as needed */
   text-align: center;
   margin-bottom: 30px; /* Add margin as needed */
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .app__about-content_about h1 {
@@ -69,9 +72,9 @@
 }
 
 .app__about-content_additional .additional__img {
-  width: 380px; /* Set the width as desired */
-  height: 520px; /* Maintain aspect ratio */
-  margin-left: 10rem;
+  width: 480px; /* Set the width as desired */
+  height: 620px; /* Maintain aspect ratio */
+  margin-left: 0rem;
 }
 
 
@@ -84,5 +87,41 @@
   .app__about-content_knife {
     flex: 1 100%;
     text-align: center;
+    justify-content: center;
   }
+}
+
+@media screen and (min-width: 2000px) {
+    .app__about-content_about img .app__aboutus-content_knife img {
+        height: 1110px;
+    }
+
+    .app__aboutus-content_about p,
+    .app__aboutus-content_history p {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app__aboutus-content .app__about-content_about {
+        flex-direction: column;
+    }
+
+    .app__aboutus-content_knife {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__aboutus-overlay img {
+        width: 118%;
+        height: 1035px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__about-content_additional .additional__img {
+        width: 85%;
+        height: 600px;
+    }
 }

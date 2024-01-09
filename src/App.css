@@ -1,6 +1,17 @@
 .section__padding {
   padding: 4rem 6rem;
 }
+.section__padding__header{
+    padding: 32rem;
+    padding-top: 0px;
+
+}
+.app__wrapper__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
 
 .flex__center {
   display: flex;
@@ -9,7 +20,7 @@
 }
 
 .app__bg {
-  background: url('./assets/bg.png');
+  background: url('./assets/bg4.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -27,11 +38,24 @@
 .app__wrapper_info {
   flex: 1;
   width: 100%;
+  max-height: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
+.app__wrapper_info__contact {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+}
+
 
 .app__wrapper_img {
   flex: 1;
@@ -43,6 +67,9 @@
   margin-left: 2rem;
 }
 
+
+
+
 .app__wrapper_img-reverse {
   justify-content: flex-start;
   margin-right: 2rem;
@@ -53,8 +80,8 @@
 }
 
 .custom__button {
-  background-color: var(--color-crimson);
-    color: var(--color-black);
+  background-color: var(--color-black);
+    color: var(--color-white);
     font-family: var(--font-base);
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -65,6 +92,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    border-radius: 0.5rem;
 }
 
 .p__cormorant {
@@ -129,15 +157,15 @@
     flex-direction: column;
   }
 
-  .app__wrapper_img {
+  .app__wrapper_img .app__wrapper_img__contact {
     margin: 5rem 0 0 0;
   }
 
-  .app__wrapper_img-reverse {
+  .app__wrapper_img__contact-reverse .app__wrapper_img-reverse {
     margin: 0 0 5rem 0;
   }
 
-  .app__wrapper_img img {
+  .app__wrapper_img__contact .app__wrapper_img img {
     width: 100%;
   }
 }

@@ -42,7 +42,7 @@ const About = () => {
 
         <div className="app__about-content_additional">
           <img
-            src={images.gallery03}
+            src={images.BigPicture}
             alt="additional_image"
             className="additional__img"
           />

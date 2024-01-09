@@ -36,14 +36,21 @@ const Gallery = () => {
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p
           className="p__opensans"
-          style={{ color: "#AAAAAA", marginTop: "2rem" }}
+          style={{ color: "white", marginTop: "2rem" }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
+          Welcome to Kabob Lounge's Visual Feast! Explore our gallery and savor
+          the vibrant array of Afghan culinary delights awaiting you. From
+          sizzling kabobs to tantalizing tikkah, immerse yourself in a visual
+          journey showcasing our passionately crafted dishes and the inviting
+          ambiance of our restaurant. Each image captures the essence of our
+          culinary artistry, inviting you to experience the authentic flavors
+          and warm hospitality that define Kabob Lounge. Join us and indulge in
+          an unforgettable dining experience filled with tradition, flavor, and
+          joy!
         </p>
         <button
           type="button"
-          className="custom__button"
+          className="custom__button__gallery"
           onClick={openInstagram}
         >
           View More on Instagram
