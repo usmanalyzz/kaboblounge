@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { SubHeading } from "../../components";
-import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
 import "./findus.css";
 
 const FindUs = () => {

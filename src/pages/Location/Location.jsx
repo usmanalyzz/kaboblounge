@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 // import { Link } from "react-router-dom";
-import { images } from "../../constants";
 import "./location.css";
 import { Navbar } from "../../components";
 import { Footer } from "../../container";
-import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
 import L from "leaflet";
-import { SubHeading } from "../../components";
 
 const Location = () => {
   const facebookURL =
@@ -15,7 +13,7 @@ const Location = () => {
     "https://www.instagram.com/kabobloungeca?igsh=d2Uyd2luN3F0dnp1";
   const destinationAddress = "1400 Plains Road East, Burlington, ON, L7R 2P8";
 
-  const openMap = () => {
+  const openMapLocation = () => {
     window.open(
       `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
         destinationAddress
@@ -25,7 +23,11 @@ const Location = () => {
   };
 
   useEffect(() => {
-    const mapLocation = L.map("mapLocation").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
+   const mapContainer = document.getElementById('mapLocation');
+
+  // Check if the map container exists
+  if (mapContainer && !mapContainer._leaflet_id) {
+    const mapLocation = L.map('mapLocation').setView([43.3871, -79.8371], 13);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "",
@@ -36,7 +38,8 @@ const Location = () => {
     // Add a marker for the destination location
     L.marker(destination).addTo(mapLocation).bindPopup(destinationAddress).openPopup();
 
-    mapLocation.on("click", openMap); // Open Google Maps on map click
+    mapLocation.on("click", openMapLocation); // Open Google Maps on map click
+  }
   }, []);
 
   return (

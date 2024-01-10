@@ -1,43 +1,32 @@
-import React, { useState, useRef, useEffect } from "react";
-import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
+import React, { useRef, useEffect } from "react";
+import { BsFillPlayFill } from "react-icons/bs";
 import { meal } from "../../constants";
 import "./Intro.css";
 
 const Intro = () => {
-  const [playVideo, setPlayVideo] = useState(false);
   const vidRef = useRef();
 
   useEffect(() => {
     const video = vidRef.current;
 
-    const handlePlay = () => {
-      setPlayVideo(true);
-    };
-
-    const handlePause = () => {
-      setPlayVideo(false);
-    };
-
-    video.addEventListener("play", handlePlay);
-    video.addEventListener("pause", handlePause);
+    video.addEventListener("ended", () => {
+      video.play();
+    });
 
     return () => {
-      video.removeEventListener("play", handlePlay);
-      video.removeEventListener("pause", handlePause);
+      video.removeEventListener("ended", () => {
+        video.play();
+      });
     };
   }, []);
 
-  const handlePlayPause = () => {
-    setPlayVideo(!playVideo);
-    if (playVideo) {
-      vidRef.current.pause();
-    } else {
-      vidRef.current.play();
-    }
-  };
+  useEffect(() => {
+    const video = vidRef.current;
+    video.play();
+  }, []);
 
   return (
-    <div className={`app__video ${playVideo ? "" : "paused"}`}>
+    <div className="app__video">
       <video
         ref={vidRef}
         src={meal}
@@ -48,15 +37,6 @@ const Intro = () => {
         height={"100%"}
         muted
       />
-      <div className="app__video-overlay">
-        <div className="app__video-overlay_circle" onClick={handlePlayPause}>
-          {playVideo ? (
-            <BsPauseFill color="#fff" fontSize={30} />
-          ) : (
-            <BsFillPlayFill color="#fff" fontSize={30} />
-          )}
-        </div>
-      </div>
     </div>
   );
 };

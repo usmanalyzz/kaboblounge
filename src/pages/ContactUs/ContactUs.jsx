@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 // import { Link } from "react-router-dom";
-import { images } from "../../constants";
 import "./contactus.css";
 import { Navbar } from "../../components";
 import { Footer } from "../../container";
-import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
 import L from "leaflet";
-import { SubHeading } from "../../components";
 
 
 const ContactUs = () => {
@@ -16,7 +14,7 @@ const ContactUs = () => {
     "https://www.instagram.com/kabobloungeca?igsh=d2Uyd2luN3F0dnp1";
   const destinationAddress = "1400 Plains Road East, Burlington, ON, L7R 2P8";
 
-  const openMap = () => {
+  const openMapContact = () => {
     window.open(
       `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
         destinationAddress
@@ -26,18 +24,29 @@ const ContactUs = () => {
   };
 
   useEffect(() => {
-    const mapContact = L.map("mapContact").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
+     const mapContainer = document.getElementById("mapContact");
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "",
-    }).addTo(mapContact);
+     // Check if the map container exists
+     if (mapContainer && !mapContainer._leaflet_id) {
+       const mapContact = L.map("mapContact").setView(
+         [43.3871, -79.8371],
+         13
+       );
 
-    const destination = [43.3871, -79.8371]; // Destination coordinates
+       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+         attribution: "",
+       }).addTo(mapContact);
 
-    // Add a marker for the destination location
-    L.marker(destination).addTo(mapContact).bindPopup(destinationAddress).openPopup();
+       const destination = [43.3871, -79.8371]; // Destination coordinates
 
-    mapContact.on("click", openMap); // Open Google Maps on map click
+       // Add a marker for the destination location
+       L.marker(destination)
+         .addTo(mapContact)
+         .bindPopup(destinationAddress)
+         .openPopup();
+
+       mapContact.on("click", openMapContact); // Open Google Maps on map click
+     }
   }, []);
 
   return (
