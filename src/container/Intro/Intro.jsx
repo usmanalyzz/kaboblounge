@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import { BsFillPlayFill } from "react-icons/bs";
 import { meal } from "../../constants";
 import "./Intro.css";
 
