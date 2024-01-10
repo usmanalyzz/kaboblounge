@@ -25,18 +25,18 @@ const Location = () => {
   };
 
   useEffect(() => {
-    const map = L.map("map").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
+    const mapLocation = L.map("mapLocation").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "",
-    }).addTo(map);
+    }).addTo(mapLocation);
 
     const destination = [43.3871, -79.8371]; // Destination coordinates
 
     // Add a marker for the destination location
-    L.marker(destination).addTo(map).bindPopup(destinationAddress).openPopup();
+    L.marker(destination).addTo(mapLocation).bindPopup(destinationAddress).openPopup();
 
-    map.on("click", openMap); // Open Google Maps on map click
+    mapLocation.on("click", openMap); // Open Google Maps on map click
   }, []);
 
   return (
@@ -77,7 +77,7 @@ const Location = () => {
         <div className="app__wrapper_img__contact">
           {/* Leaflet map */}
           <div
-            id="map"
+            id="mapLocation"
             style={{ width: "100%", height: "400px", cursor: "pointer" }}
           ></div>
         </div>

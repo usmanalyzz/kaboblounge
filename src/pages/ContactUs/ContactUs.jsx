@@ -26,18 +26,18 @@ const ContactUs = () => {
   };
 
   useEffect(() => {
-    const map = L.map("map").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
+    const mapContact = L.map("mapContact").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "",
-    }).addTo(map);
+    }).addTo(mapContact);
 
     const destination = [43.3871, -79.8371]; // Destination coordinates
 
     // Add a marker for the destination location
-    L.marker(destination).addTo(map).bindPopup(destinationAddress).openPopup();
+    L.marker(destination).addTo(mapContact).bindPopup(destinationAddress).openPopup();
 
-    map.on("click", openMap); // Open Google Maps on map click
+    mapContact.on("click", openMap); // Open Google Maps on map click
   }, []);
 
   return (
@@ -47,7 +47,7 @@ const ContactUs = () => {
         <div className="app__wrapper_info__contact">
           {/* <SubHeading title="Contact" /> */}
           <h1 className="headtext__cormorant" style={{ marginBottom: "3rem" }}>
-            Find Us
+            Contact Us
           </h1>
           <div className="app__wrapper-content">
             <p className="p__opensans">
@@ -78,7 +78,7 @@ const ContactUs = () => {
         <div className="app__wrapper_img__contact">
           {/* Leaflet map */}
           <div
-            id="map"
+            id="mapContact"
             style={{ width: "100%", height: "400px", cursor: "pointer" }}
           ></div>
         </div>

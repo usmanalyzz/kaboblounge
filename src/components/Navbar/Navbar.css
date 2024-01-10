@@ -119,8 +119,9 @@
 }
 
 .app__navbar-halal-image img {
-  width: 81px; /* Adjust the width as needed */
+  width: 70px; /* Adjust the width as needed */
   height: auto;
+  margin-right: 2rem;
 }
 
 /* Adjust positioning for smaller screens */
@@ -157,6 +158,32 @@
     }
 
     .app__navbar-logo img {
-        width: 220px;
+        width: 155px;
+    }
+    .app__navbar-halal-image img{
+        width: 61px;
+        height: 60px;
+        margin-top: 1rem;
+        margin-left: 2rem;
     }
 }
+
+/* Media query for iPad Mini portrait mode */
+@media screen and (max-width: 768px) {
+  .app__wrapper_img__contact #map {
+        width: 61px;
+        height: 60px;
+        /* margin-top: 1rem; */
+        margin-left: 2rem;
+    }
+}
+
+/* Media query for iPad Mini landscape mode */
+/* @media screen and (max-width: 1024px) {
+  .app__wrapper_img__contact #map {
+        width: 61px;
+        height: 60px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+} */
