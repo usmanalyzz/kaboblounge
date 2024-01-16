@@ -45,7 +45,12 @@
   animation-fill-mode: forwards;
   border-radius: 10px;
 }
-
+.best{
+  margin-left: 7.5rem;
+}
+.taste{
+  margin-left: 6.7rem;
+}
 @keyframes fadeInAnimation {
   from {
     opacity: 0;
@@ -75,6 +80,12 @@
         font-size: 70px;
         line-height: 87px;
     }
+    .best{
+  margin-left: 5.5rem;
+}
+.taste{
+  margin-left: 5rem;
+}
 }
 
 @media screen and (max-width: 450px) {
@@ -82,4 +93,10 @@
         font-size: 50px;
         line-height: 70px;
     }
+        .best{
+  margin-left: 2.5rem;
+}
+.taste{
+  margin-left: 2.5rem;
+}
 }

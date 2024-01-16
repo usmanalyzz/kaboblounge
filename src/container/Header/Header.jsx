@@ -20,10 +20,6 @@ const Header = () => {
   const headingStyle = {
     marginBottom: "10px", // Margin between heading and subheadings
   };
-
-  const buttonStyle = {
-    marginTop: "20px", // Margin above the button
-  };
   useEffect(() => {
     const wrapperInfo = document.querySelector(".app__wrapper_info");
     wrapperInfo.style.opacity = 1;
@@ -44,23 +40,19 @@ const Header = () => {
           <h1 className="app__header-h1">Kabob Lounge</h1>
         </div>
         <div className="p__opensans">
-          <h4>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B E S T
-            &nbsp; A F G H A N &nbsp; &nbsp; C U I S I N E
-          </h4>
-          <h3 style={subheadingStyle}>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A &nbsp; Place &nbsp; of
-            &nbsp; Authentic &nbsp; Taste
+          <h4 className="best">B E S T &nbsp; A F G H A N &nbsp; C U I S I N E</h4>
+          <h3 style={subheadingStyle} className="taste">
+            A &nbsp; Place &nbsp; of &nbsp; Authentic &nbsp; Taste
           </h3>
         </div>
         <br />
         <p className="p__opensans">
-          <b>
+          <b className="para">
             Step into our aromatic haven and explore the rich mosaic of Afghan
             flavors. &nbsp;K A B O B &nbsp; L O U N G E &nbsp;offers a vibrant
-            tapestry of aromatic spices,From the beloved kabuli pulao to
+            tapestry of aromatic spices, From the beloved kabuli pulao to
             succulent kabobs and comforting qorma stews and hand crafted Chapli
-            Kabobs ,our menu showcases the essence of Afghan gastronomy. Each
+            Kabobs, our menu showcases the essence of Afghan gastronomy. Each
             dish reflects the warmth of Afghan hospitality and a blend of
             cultural influences, inviting you to savor the authentic taste of
             this captivating cuisine

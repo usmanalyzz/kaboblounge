@@ -16,7 +16,7 @@ const FindUs = () => {
   };
 
   useEffect(() => {
-    const map = L.map("map").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
+    const map = L.map("mapHome").setView([43.3871, -79.8371], 13); // Default view (Burlington, ON)
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "",
@@ -59,15 +59,15 @@ const FindUs = () => {
           >
             Opening Hours
           </p>
-          <p className="p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
-          <p className="p__opensans">Sat - Sun: 10:00 am - 03:00 am</p>
+          <p className="p__opensans">Sun - Thurs: 11:30 am - 09:00 pm</p>
+          <p className="p__opensans">Fri - Sat: 11:30 am - 12:00 am</p>
         </div>
       </div>
 
       <div className="app__wrapper_img">
         {/* Leaflet map */}
         <div
-          id="map"
+          id="mapHome"
           style={{ width: "100%", height: "400px", cursor: "pointer" }}
         ></div>
       </div>
