@@ -72,8 +72,8 @@ const Location = () => {
             >
               Opening Hours
             </p>
-            <p className="p__opensans">Sun - Thurs: 11:30 am - 09:00 pm</p>
-            <p className="p__opensans">Fri - Sat: 11:30 am - 12:00 am</p>
+            <p className="p__opensans">Sun - Thurs: 12:00 pm - 10:00 pm</p>
+            <p className="p__opensans">Fri - Sat: 12:00 pm - 12:00 am</p>
           </div>
         </div>
 

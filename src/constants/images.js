@@ -1,56 +1,55 @@
-import bg from "../assets/bg.jpg";
-import bg1 from "../assets/bg1.jpg";
-import bg2 from "../assets/bg2.jpg";
-import bg3 from "../assets/bg3.jpg";
-import bg4 from "../assets/bg4.jpg";
-import halalLogo from "../assets/halalLogo.jpg";
+import bg from "../assets/bg.webp";
+import bg1 from "../assets/bg1.webp";
+import bg2 from "../assets/bg2.webp";
+import bg3 from "../assets/bg3.webp";
+import bg4 from "../assets/bg4.webp";
+import halalLogo from "../assets/halalLogo.webp";
 
 
-import G from "../assets/G.png";
-import KL from "../assets/KL.png";
-import knife from "../assets/knife.png";
-import seekh1 from "../assets/seekh.png";
-import seekh2 from "../assets/Seekh.jpeg";
-import Kb from "../assets/Kb.JPG";
+import G from "../assets/G.webp";
+import KL from "../assets/KL.webp";
+import knife from "../assets/knife.webp";
+import Kb from "../assets/Kb.webp";
 
-import doordash from "../assets/doordash.jpg";
-import doordash1 from "../assets/doordash1.jpg";
-import doordash2 from "../assets/doordash2.png";
-import ubereats1 from "../assets/ubereats.jpeg";
-import ubereats2 from "../assets/ubereats.png";
+import doordash from "../assets/doordash.webp";
+import doordash1 from "../assets/doordash1.webp";
+import doordash2 from "../assets/doordash2.webp";
+import ubereats1 from "../assets/ubereats.webp";
+import ubereats2 from "../assets/ubereats.webp";
 
-import menu from "../assets/menu.png";
-import overlaybg from "../assets/overlaybg.png";
+import menu from "../assets/menu.webp";
+import overlaybg from "../assets/overlaybg.webp";
 import spoon from "../assets/spoon.svg";
-import FinalLogo from "../assets/FinalLogo1.png";
-import pcsChickenWingsOnly8 from "../assets/8pcsChickenWingsOnly.jpg";
-import pcsChickenWingsSaladNaan8 from "../assets/8pcsChickenWingsSaladNaan.jpg";
-import pcsChickenWingsOnly12 from "../assets/12pcsChickenWingsOnly.jpg";
-import pcsChickenWingsOnlySaladNaan12 from "../assets/12pcsChickenWingsOnlySaladNaan.jpg";
-import BeefFor2 from "../assets/BeefFor2.jpg";
-import BeefTikkaDinner from "../assets/BeefTikkaDinner.jpg";
-import BeefTikkaSaladNaan from "../assets/BeefTikkaSaladNaan.jpg";
-import BigPicture from "../assets/BigPicture.png";
-import BigPicture1 from "../assets/BigPicture1.jpg";
-import ChapleeKabobDinner from "../assets/ChapleeKabobDinner.jpg";
-import ChapleeKabobSaladNaan from "../assets/ChapleeKabobSaladNaan.jpg";
-import ChickenChapleeKabobDinner from "../assets/ChickenChapleeKabobDinner.jpg";
-import ChickenChapleeKabobSaladNaan from "../assets/ChickenChapleeKabobSaladNaan.jpg";
-import ChickenFor2 from "../assets/ChickenFor2.jpg";
-import ChickenKoftaKabobDinner from "../assets/ChickenKoftaKabobDinner.jpg";
-import ChickenWhiteBreastKabobDinner from "../assets/ChickenWhiteBreastKabobDinner.jpg";
-import ChickenWhiteBreastKabobSaladNaan from "../assets/ChickenWhiteBreastKabobSaladNaan.jpg";
-import FamilyPlatter1 from "../assets/FamilyPlatter1.jpg";
-import FamilyPlatter2 from "../assets/FamilyPlatter2.jpg";
-import HalfChickenDinner from "../assets/HalfChickenDinner.jpg";
-import KoftaKabobSaladNaan from "../assets/KoftaKabobSaladNaan.jpg";
-import QabuleeRiceWithRasinCarrot from "../assets/QabuleeRiceWithRasinCarrot.jpg";
-import SultaniKabobSaladNaan from "../assets/SultaniKabobSaladNaan.jpg";
-import TandooriBreastKabobDinner from "../assets/TandooriBreastKabobDinner.jpg";
-import TandooriBreastKabobSaladNaan from "../assets/TandooriBreastKabobSaladNaan.jpg";
-import WazeriKabobDinner from "../assets/WazeriKabobDinner.jpg";
-import WazeriKabobSaladNaan from "../assets/WazeriKabobSaladNaan.jpg";
-import Back from "../assets/back.jpg";
+import FinalLogo from "../assets/FinalLogo1.webp";
+import pcsChickenWingsOnly8 from "../assets/8pcsChickenWingsOnly.webp";
+import pcsChickenWingsSaladNaan8 from "../assets/8pcsChickenWingsSaladNaan.webp";
+import pcsChickenWingsOnly12 from "../assets/12pcsChickenWingsOnly.webp";
+import pcsChickenWingsOnlySaladNaan12 from "../assets/12pcsChickenWingsOnlySaladNaan.webp";
+import BeefFor2 from "../assets/BeefFor2.webp";
+import BeefTikkaDinner from "../assets/BeefTikkaDinner.webp";
+import BeefTikkaSaladNaan from "../assets/BeefTikkaSaladNaan.webp";
+import BigPicture from "../assets/BigPicture.webp";
+import BigPicture1 from "../assets/BigPicture1.webp";
+import ChapleeKabobDinner from "../assets/ChapleeKabobDinner.webp";
+import ChapleeKabobSaladNaan from "../assets/ChapleeKabobSaladNaan.webp";
+import ChickenChapleeKabobDinner from "../assets/ChickenChapleeKabobDinner.webp";
+import ChickenChapleeKabobSaladNaan from "../assets/ChickenChapleeKabobSaladNaan.webp";
+import ChickenFor2 from "../assets/ChickenFor2.webp";
+import ChickenKoftaKabobDinner from "../assets/ChickenKoftaKabobDinner.webp";
+import ChickenWhiteBreastKabobDinner from "../assets/ChickenWhiteBreastKabobDinner.webp";
+import ChickenWhiteBreastKabobSaladNaan from "../assets/ChickenWhiteBreastKabobSaladNaan.webp";
+import FamilyPlatter1 from "../assets/FamilyPlatter1.webp";
+import FamilyPlatter2 from "../assets/FamilyPlatter2.webp";
+import HalfChickenDinner from "../assets/HalfChickenDinner.webp";
+import KoftaKabobSaladNaan from "../assets/KoftaKabobSaladNaan.webp";
+import QabuleeRiceWithRasinCarrot from "../assets/QabuleeRiceWithRasinCarrot.webp";
+import SultaniKabobSaladNaan from "../assets/SultaniKabobSaladNaan.webp";
+import TandooriBreastKabobDinner from "../assets/TandooriBreastKabobDinner.webp";
+import TandooriBreastKabobSaladNaan from "../assets/TandooriBreastKabobSaladNaan.webp";
+import WazeriKabobDinner from "../assets/WazeriKabobDinner.webp";
+import WazeriKabobSaladNaan from "../assets/WazeriKabobSaladNaan.webp";
+import Back from "../assets/back.webp";
+import seekh from "../assets/seekh.webp";
 export default {
   bg,
   bg1,
@@ -62,11 +61,10 @@ export default {
   KL,
   knife,
   halalLogo,
-  seekh1,
-  seekh2,
   menu,
   overlaybg,
   spoon,
+  seekh,
   FinalLogo,
 pcsChickenWingsSaladNaan8,  
   pcsChickenWingsOnly8,

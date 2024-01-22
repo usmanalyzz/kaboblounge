@@ -31,8 +31,8 @@ const Footer = () => {
             service of others.&quot;
           </p>
           <img
-            src={images.spoon}
-            className="spoon__img"
+            src={images.seekh}
+            className="seekh__img"
             style={{ marginTop: 15 }}
           />
           <div className="app__footer-links_icons">
@@ -43,9 +43,9 @@ const Footer = () => {
         <div className="app__footer-links_work">
           <h1 className="app__footer-headtext">Working Hours</h1>
           <p className="p__opensans">Sunday-Thursday:</p>
-          <p className="p__opensans">11:30 am - 09:00 pm</p>
+          <p className="p__opensans">12:00 pm - 10:00 pm</p>
           <p className="p__opensans">Friday-Saturday:</p>
-          <p className="p__opensans">11:30 am - 12:00 am</p>
+          <p className="p__opensans">12:00 pm - 12:00 am</p>
         </div>
       </div>
       <div className="footer__copyright">

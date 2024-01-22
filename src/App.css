@@ -129,6 +129,9 @@
 .spoon__img {
   width: 45px;
 }
+.seekh__img{
+  width: 300px;
+}
 
 @media screen and (min-width: 2000px) {
   .custom__button,

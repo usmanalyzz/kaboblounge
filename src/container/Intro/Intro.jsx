@@ -35,6 +35,7 @@ const Intro = () => {
         width={"100%"}
         height={"100%"}
         muted
+        autoplay
       />
     </div>
   );

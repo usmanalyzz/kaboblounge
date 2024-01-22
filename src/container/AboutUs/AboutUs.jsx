@@ -68,6 +68,7 @@ const AboutUs = () => {
             Afghanistan's rich culinary legacy.
             <br />
             <br />
+            <br />
           </p>
           <Link to="/AboutUsMore">
             <button type="button" className="custom__button">
