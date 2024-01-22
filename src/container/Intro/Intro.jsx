@@ -31,11 +31,10 @@ const Intro = () => {
         src={meal}
         type="video/mp4"
         loop
-        controls={false}
         width={"100%"}
         height={"100%"}
         muted
-        autoplay
+        autoPlay
       />
     </div>
   );
