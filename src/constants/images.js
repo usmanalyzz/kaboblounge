@@ -11,7 +11,7 @@ import pcsChickenWingsOnlySaladNaan12 from "../assets/12pcsChickenWingsOnlySalad
 import BeefFor2 from "../assets/BeefFor2.webp";
 import BeefTikkaDinner from "../assets/BeefTikkaDinner.webp";
 import BeefTikkaSaladNaan from "../assets/BeefTikkaSaladNaan.webp";
-import BigPicture from "../assets/BigPicture.webp";
+import BigPicture from "../assets/BigPicture.jpg";
 import BigPicture1 from "../assets/BigPicture1.webp";
 import ChapleeKabobDinner from "../assets/ChapleeKabobDinner.webp";
 import ChapleeKabobSaladNaan from "../assets/ChapleeKabobSaladNaan.webp";
