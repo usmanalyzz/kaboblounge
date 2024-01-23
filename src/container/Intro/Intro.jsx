@@ -29,7 +29,7 @@ const Intro = () => {
       <video
         ref={vidRef}
         src={meal}
-        type="video/mp4"
+        type="video/webm"
         loop
         width={"100%"}
         height={"100%"}

@@ -1,24 +1,7 @@
-import bg from "../assets/bg.webp";
-import bg1 from "../assets/bg1.webp";
-import bg2 from "../assets/bg2.webp";
-import bg3 from "../assets/bg3.webp";
-import bg4 from "../assets/bg4.webp";
 import halalLogo from "../assets/halalLogo.webp";
-
-
-import G from "../assets/G.webp";
-import KL from "../assets/KL.webp";
-import knife from "../assets/knife.webp";
 import Kb from "../assets/Kb.webp";
-
 import doordash from "../assets/doordash.webp";
-import doordash1 from "../assets/doordash1.webp";
-import doordash2 from "../assets/doordash2.webp";
 import ubereats1 from "../assets/ubereats.webp";
-import ubereats2 from "../assets/ubereats.webp";
-
-import menu from "../assets/menu.webp";
-import overlaybg from "../assets/overlaybg.webp";
 import spoon from "../assets/spoon.svg";
 import FinalLogo from "../assets/FinalLogo1.webp";
 import pcsChickenWingsOnly8 from "../assets/8pcsChickenWingsOnly.webp";
@@ -48,25 +31,14 @@ import TandooriBreastKabobDinner from "../assets/TandooriBreastKabobDinner.webp"
 import TandooriBreastKabobSaladNaan from "../assets/TandooriBreastKabobSaladNaan.webp";
 import WazeriKabobDinner from "../assets/WazeriKabobDinner.webp";
 import WazeriKabobSaladNaan from "../assets/WazeriKabobSaladNaan.webp";
-import Back from "../assets/back.webp";
 import seekh from "../assets/seekh.webp";
 export default {
-  bg,
-  bg1,
-  bg2,
-  bg3,
-  bg4,
   Kb,
-  G,
-  KL,
-  knife,
   halalLogo,
-  menu,
-  overlaybg,
   spoon,
   seekh,
   FinalLogo,
-pcsChickenWingsSaladNaan8,  
+  pcsChickenWingsSaladNaan8,  
   pcsChickenWingsOnly8,
   pcsChickenWingsOnly12,
   pcsChickenWingsOnlySaladNaan12,
@@ -93,10 +65,6 @@ pcsChickenWingsSaladNaan8,
   TandooriBreastKabobSaladNaan,
   WazeriKabobDinner,
   WazeriKabobSaladNaan,
-  Back,
   doordash,
-  doordash1,
-  doordash2,
-  ubereats1,
-  ubereats2
+  ubereats1, 
 };
